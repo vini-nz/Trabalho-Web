@@ -1,24 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Trabalho HTML e CSS</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+
+    <header class="header">
 
         <div class="logo">
-            <h2>Bruno - Vinicius</h2>
+            <h1>Trabalho Web</h1>
         </div>
 
-        <nav>
+
+        <input type="checkbox" id="menu-toggle">
+
+
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+
+        <nav class="nav">
+
             <a href="#">Home</a>
-            <a href="#">Exercícios</a>
-            <a href="#">Sobre</a>
+
+
+            <div class="dropdown">
+                <button class="dropbtn">Exercícios ▾</button>
+
+                <div class="dropdown-content">
+                    <a href="exercicio01-introducao/introducao.html">Exercício 01</a>
+                    <a href="exercicio02-perfil/index.html">Exercício 02</a>
+                    <a href="exercicio03-portfolio/index.html">Exercício 03</a>
+                    <a href="exercicio04-blog/index.html">Exercício 04</a>
+                    <a href="exercicio05-contato/index.html">Exercício 05</a>
+                    <a href="exercicio06-faq/index.html">Exercício 06</a>
+                    <a href="exercicio07-login/index.html">Exercício 07</a>
+                    <a href="exercicio08-produto/index.html">Exercício 08</a>
+                    <a href="exercicio09-tarefas/index.html">Exercício 09</a>
+                    <a href="exercicio10-testemunhos/index.html">Exercício 10</a>
+                    <a href="exercicio11-mapa-site/index.html">Exercício 11</a>
+                    <a href="exercicio12-galeria/index.html">Exercício 12</a>
+                    <a href="exercicio13-promocoes/index.html">Exercício 13</a>
+                    <a href="exercicio14-equipe/index.html">Exercício 14</a>
+                    <a href="exercicio15-lancamento/index.html">Exercício 15</a>
+                </div>
+            </div>
+
+            <a href="sobre/index.html">Sobre</a>
+
         </nav>
 
     </header>
@@ -35,9 +75,10 @@
 
 
     <main>
+
         <section class="grid-exercicios">
 
-            <a href="exercicio01-introducao/index.html" class="card">
+            <a href="exercicio01-introducao/introducao.html" class="card">
                 <h3>Exercício 01</h3>
                 <p>Página de Introdução</p>
             </a>
@@ -111,14 +152,18 @@
                 <h3>Exercício 15</h3>
                 <p>Lançamento</p>
             </a>
+
         </section>
+
     </main>
 
 
     <footer>
+
         <p>
             @ Desenvolvido por Bruno Myguel & Vinicius Santos • Programação Web
         </p>
+
     </footer>
 
 </body>
