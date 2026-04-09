@@ -1,0 +1,46 @@
+.testemunhos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.testemunho {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    width: 260px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.testemunho:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.testemunho img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.8rem;
+}
+
+.testemunho h3 {
+    font-size: 1rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+/* AQUI ESTÁ O FOCO DO EXERCÍCIO */
+.testemunho blockquote {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+    /* propriedade pedida */
+    line-height: 1.5;
+}

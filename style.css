@@ -4,20 +4,21 @@
 
 /* --- CSS VARIABLES --- */
 :root {
-  --bg:          #f0f4f8;
-  --surface:     #ffffff;
+  --bg: #f0f4f8;
+  --surface: #ffffff;
   --surface-alt: #f8fafc;
-  --border:      #e2e8f0;
-  --header-bg:   #1f2937;
-  --footer-bg:   #1f2937;
-  --primary:     #2563eb;
-  --primary-h:   #1d4ed8;
-  --text:        #1e293b;
-  --muted:       #64748b;
-  --radius:      12px;
-  --shadow:      0 4px 16px rgba(0,0,0,0.08);
-  --shadow-lg:   0 8px 28px rgba(0,0,0,0.13);
-  --transition:  0.3s ease;   /* 3seg suave */
+  --border: #e2e8f0;
+  --header-bg: #1f2937;
+  --footer-bg: #1f2937;
+  --primary: #2563eb;
+  --primary-h: #1d4ed8;
+  --text: #1e293b;
+  --muted: #64748b;
+  --radius: 12px;
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 28px rgba(0, 0, 0, 0.13);
+  --transition: 0.3s ease;
+  /* 3seg suave */
 }
 
 
@@ -46,8 +47,9 @@ body {
   justify-content: space-between;
   padding: 0 1.5rem;
   height: 64px;
-  z-index: 999;   /* deixa mais proxima */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  z-index: 999;
+  /* deixa mais proxima */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .logo {
@@ -57,6 +59,7 @@ body {
   text-decoration: none;
   color: #fff;
 }
+
 .logo-icon {
   width: 32px;
   height: 32px;
@@ -65,11 +68,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 800; /* Grossura do bold */
+  font-weight: 800;
+  /* Grossura do bold */
   font-size: 1rem;
 }
+
 .logo h1 {
-  font-size: 1.1rem; 
+  font-size: 1.1rem;
 }
 
 /* inicio da config do menu hamburguer e nav em tela menor */
@@ -77,19 +82,23 @@ body {
 #menu-toggle {
   display: none;
 }
+
 .menu-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5px; /* espaço entre os span */
+  gap: 5px;
+  /* espaço entre os span */
   cursor: pointer;
   padding: 6px;
   border-radius: 6px;
   transition: var(--transition);
 }
+
 .menu-icon:hover {
-  background: rgba(255,255,255,0.1); 
+  background: rgba(255, 255, 255, 0.1);
 }
+
 .menu-icon span {
   display: block;
   height: 2px;
@@ -99,17 +108,18 @@ body {
   transition: var(--transition);
 }
 
-#menu-toggle:checked ~ .menu-icon span:nth-child(1) { 
-  transform: translateY(7px) 
-  rotate(45deg); 
+#menu-toggle:checked~.menu-icon span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
 }
-#menu-toggle:checked ~ .menu-icon span:nth-child(2) { 
-  opacity: 0; transform: 
-  scaleX(0); 
+
+#menu-toggle:checked~.menu-icon span:nth-child(2) {
+  opacity: 0;
+  transform:
+    scaleX(0);
 }
-#menu-toggle:checked ~ .menu-icon span:nth-child(3) { 
-  transform: translateY(-7px) 
-  rotate(-45deg); 
+
+#menu-toggle:checked~.menu-icon span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 .nav {
@@ -121,16 +131,17 @@ body {
   right: 0;
   background: #1f2937;
   padding: 1rem 1rem;
-  border-top: 1px solid rgba(255,255,255,0.08);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
   transition: var(--transition);
 }
 
-#menu-toggle:checked ~ .nav { 
+#menu-toggle:checked~.nav {
   display: flex;
 }
 
-.nav a {   /* direto pro "filho "a" */
+.nav a {
+  /* direto pro "filho "a" */
   color: #cbd5e1;
   text-decoration: none;
   font-weight: 600;
@@ -139,13 +150,14 @@ body {
   border-radius: 6px;
   transition: var(--transition);
 }
+
 .nav a:hover {
-  color: #fff; 
-  background: rgba(255,255,255,0.06); 
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
 }
 
-.dropdown { 
-  position: relative; 
+.dropdown {
+  position: relative;
 }
 
 .dropbtn {
@@ -162,9 +174,10 @@ body {
   display: flex;
   transition: var(--transition);
 }
-.dropbtn:hover { 
-  color: #fff; 
-  background: rgba(255,255,255,0.06); 
+
+.dropbtn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .dropdown-content {
@@ -173,6 +186,7 @@ body {
   background: #111827;
   border-radius: 8px;
 }
+
 .dropdown-content a {
   color: #94a3b8;
   text-decoration: none;
@@ -180,19 +194,21 @@ body {
   padding: 0.45rem 1rem;
   transition: var(--transition);
 }
-.dropdown-content a:hover { 
-  background: rgba(37,99,235,0.2); 
-  color: #fff; 
+
+.dropdown-content a:hover {
+  background: rgba(37, 99, 235, 0.2);
+  color: #fff;
 }
-.dropdown:hover .dropdown-content { 
-  display: flex; 
+
+.dropdown:hover .dropdown-content {
+  display: flex;
 }
 
 /* fim */
 
 /* Desktop */
 @media (min-width: 1024px) {
-  .menu-icon { 
+  .menu-icon {
     display: none;
   }
 
@@ -208,10 +224,11 @@ body {
     gap: 0.25rem;
   }
 
-  .dropbtn { 
-    width: auto; 
+  .dropbtn {
+    width: auto;
     padding: 0.45rem 0.75rem;
   }
+
   .dropdown-content {
     position: absolute;
     left: 0;
@@ -219,20 +236,22 @@ body {
     max-height: 320px;
     overflow-y: auto;
     box-shadow: var(--shadow-lg);
-    border: 1px solid rgba(255,255,255,0.06);
+    border: 1px solid rgba(255, 255, 255, 0.06);
     z-index: 1000;
   }
 }
 
 /* LAYOUT */
-main { 
-  flex: 1;   /* joga o footer pra bx */
+main {
+  flex: 1;
+  /* joga o footer pra bx */
   padding: 2rem 1.25rem;
 }
 
-.container { 
+.container {
   max-width: 1100px;
-  margin: 0 auto;   /* centraliza */
+  margin: 0 auto;
+  /* centraliza */
 }
 
 /* CARD EXERCICIO */
@@ -259,19 +278,21 @@ main {
   font-weight: 700;
   color: var(--primary);
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .tag {
-  font-size: 0.75rem; 
-  font-weight: 700; 
-  padding: 0.25rem 0.65rem; 
-  border-radius: 999px; 
-  background: #dbeafe; 
-  color: var(--primary); 
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  background: #dbeafe;
+  color: var(--primary);
 }
+
 .tag.css {
-  background: #ede9fe; 
-  color: #7c3aed; 
+  background: #ede9fe;
+  color: #7c3aed;
 }
 
 /* BOTÕES */
@@ -290,9 +311,10 @@ main {
   border: 1px solid var(--border);
   transition: var(--transition);
 }
+
 .btn-voltar:hover {
-  background: var(--border); 
-  color: var(--text); 
+  background: var(--border);
+  color: var(--text);
 }
 
 .nav-exercicios {
@@ -318,14 +340,16 @@ main {
   align-items: center;
   gap: 0.4rem;
 }
-.btn-nav:hover { 
-  background: var(--primary-h); 
+
+.btn-nav:hover {
+  background: var(--primary-h);
   transform: translateY(-2px);
 }
-.btn-nav.disabled { 
-  background: var(--border); 
-  color: var(--muted); 
-  pointer-events: none; 
+
+.btn-nav.disabled {
+  background: var(--border);
+  color: var(--muted);
+  pointer-events: none;
 }
 
 .btn {
@@ -343,18 +367,21 @@ main {
   cursor: pointer;
   transition: var(--transition);
 }
-.btn:hover { 
-  background: var(--primary-h); 
-  transform: translateY(-2px); 
+
+.btn:hover {
+  background: var(--primary-h);
+  transform: translateY(-2px);
 }
-.btn.outline { 
-  background: transparent; 
-  border: 2px solid var(--primary); 
-  color: var(--primary); 
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
 }
-.btn.outline:hover { 
-  background: var(--primary); 
-  color: #fff; 
+
+.btn.outline:hover {
+  background: var(--primary);
+  color: #fff;
 }
 
 
@@ -365,6 +392,7 @@ footer {
   padding: 1.25rem;
   font-size: 0.85rem;
 }
-footer strong { 
-  color: #94a3b8; 
+
+footer strong {
+  color: #94a3b8;
 }

@@ -1,0 +1,26 @@
+.mapa-container {
+    margin-top: 2rem;
+}
+
+.mapa {
+    list-style: none;
+    padding-left: 0;
+}
+
+.mapa li {
+    padding: 0.4rem 0;
+    text-indent: 0;
+    /* nível raiz */
+    font-weight: 600;
+    color: var(--text);
+}
+
+.mapa ul li {
+    text-indent: 40px;
+    font-weight: bold;
+    color: var(--muted);
+}
+
+.mapa ul ul li {
+    text-indent: 40px;
+}

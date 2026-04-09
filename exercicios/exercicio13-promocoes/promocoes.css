@@ -1,0 +1,52 @@
+.promocoes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.produto {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    width: 260px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.produto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.produto h3 {
+    margin: 0.8rem 0 0.4rem;
+    color: var(--primary);
+}
+
+.produto p {
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+/* FOCO DO EXERCÍCIO */
+.preco del {
+    color: #ef4444;
+    /* propriedade exigida */
+    margin-right: 0.5rem;
+}
+
+.preco-novo {
+    font-weight: bold;
+    color: #16a34a;
+}

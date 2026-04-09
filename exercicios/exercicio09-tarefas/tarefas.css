@@ -1,0 +1,86 @@
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.add-task {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.input-tarefa {
+    flex: 1;
+    padding: 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.btn-add {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.lista-tarefas {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.tarefa {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--surface);
+    padding: 0.8rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+.tarefa label {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.tarefa input:checked+label {
+    text-decoration: line-through;
+    color: var(--muted);
+}
+
+.acoes {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.btn-acao {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.btn-acao.delete {
+    background: #dc2626;
+}
+
+/* responsividade */
+@media (max-width: 500px) {
+    .tarefa {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .acoes {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}

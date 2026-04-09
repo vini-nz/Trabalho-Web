@@ -1,0 +1,53 @@
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    background: var(--surface);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow-lg);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.form-group textarea {
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.btn-enviar {
+    margin-top: 0.5rem;
+    padding: 0.7rem;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-enviar:hover {
+    background: var(--primary-h);
+    transform: translateY(-2px);
+}

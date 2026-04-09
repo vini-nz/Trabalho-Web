@@ -2,40 +2,28 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Exercício 02 - Perfil</title>
-
+    <title>09 · Lista de Tarefas</title>
     <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="perfis.css">
-
+    <link rel="stylesheet" href="tarefas.css">
 </head>
 
 <body>
 
     <header class="header">
-
         <a href="../../index.html" class="logo">
             <div class="logo-icon">W</div>
             <h1>Trabalho Web</h1>
         </a>
-
         <input type="checkbox" id="menu-toggle">
-
         <label for="menu-toggle" class="menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
         </label>
-
         <nav class="nav">
             <a href="../../index.html">Home</a>
-
             <div class="dropdown">
                 <button class="dropbtn">Exercícios ▾</button>
-
                 <div class="dropdown-content">
                     <a href="../exercicio01-introducao/introducao.html">01 · Introdução</a>
                     <a href="../exercicio02-perfil/perfis.html">02 · Perfil</a>
@@ -54,10 +42,8 @@
                     <a href="../exercicio15-lancamento/lancamento.html">15 · Lançamento</a>
                 </div>
             </div>
-
-            <a href="../sobre/sobre.html">Sobre</a>
+            <a href="../../sobre/sobre.html">Sobre</a>
         </nav>
-
     </header>
 
     <main class="exercicio-container">
@@ -66,48 +52,59 @@
 
             <a href="../../index.html" class="btn-voltar">← Voltar ao Dashboard</a>
 
-            <h2>Exercício 02 — Página de Perfil</h2>
+            <h2>Exercício 09 — Lista de Tarefas</h2>
 
-            <div class="perfis-container">
+            <div class="todo-container">
 
-                <div class="perfil">
-                    <img src="images/image-bruno.jpg" class="foto-perfil" alt="Foto de Bruno">
-                    <h3>Bruno Myguel</h3>
-                    <p>Desenvolvedor Web FullStack.</p>
-                    <div class="perfil-links">
-                        <a href="https://github.com/brunoMyguelDotCom" target="_blank" class="btn-link">GitHub</a>
-                        <a href="https://www.linkedin.com/in/bruno-myguel/" target="_blank"
-                            class="btn-link">LinkedIn</a>
-                    </div>
+                <div class="add-task">
+                    <input type="text" placeholder="Nova tarefa..." class="input-tarefa">
+                    <button class="btn-add">Adicionar</button>
                 </div>
 
-                <div class="perfil">
-                    <img src="images/image-vinicius.jpeg" class="foto-perfil" alt="Foto de Bruno">
-                    <h3>Vinicius Barbosa</h3>
-                    <p>Desenvolvedor Web FullStack.</p>
-                    <div class="perfil-links">
-                        <a href="https://github.com/vini-nz" target="_blank" class="btn-link">GitHub</a>
-                        <a href="https://www.linkedin.com/in/vinicius-barbosa207/" target="_blank"
-                            class="btn-link">LinkedIn</a>
-                    </div>
-                </div>
+                <ul class="lista-tarefas">
+
+                    <li class="tarefa">
+                        <input type="checkbox" id="t1">
+                        <label for="t1">Estudar HTML</label>
+                        <div class="acoes">
+                            <button class="btn-acao">Editar</button>
+                            <button class="btn-acao delete">Excluir</button>
+                        </div>
+                    </li>
+
+                    <li class="tarefa">
+                        <input type="checkbox" id="t2">
+                        <label for="t2">Praticar CSS Grid</label>
+                        <div class="acoes">
+                            <button class="btn-acao">Editar</button>
+                            <button class="btn-acao delete">Excluir</button>
+                        </div>
+                    </li>
+
+                    <li class="tarefa">
+                        <input type="checkbox" id="t3">
+                        <label for="t3">Revisar exercícios</label>
+                        <div class="acoes">
+                            <button class="btn-acao">Editar</button>
+                            <button class="btn-acao delete">Excluir</button>
+                        </div>
+                    </li>
+
+                </ul>
 
             </div>
 
             <div class="nav-exercicios">
-                <a href="../exercicio01-introducao/introducao.html" class="btn-nav">← Anterior</a>
-                <a href="../exercicio03-portfolio/portifolio.html" class="btn-nav">Próximo →</a>
+                <a href="../exercicio08-produto/produto.html" class="btn-nav">← Anterior</a>
+                <a href="../exercicio10-testemunhos/testemunhos.html" class="btn-nav">Próximo →</a>
             </div>
 
         </div>
 
     </main>
 
-    <!-- FOOTER -->
     <footer>
-        <p>
-            © Desenvolvido por Bruno Myguel & Vinicius Santos • Programação Web
-        </p>
+        <p>© 2026 · Desenvolvido por <strong>Bruno Myguel &amp; Vinicius Santos</strong> · Programação Web</p>
     </footer>
 
 </body>
