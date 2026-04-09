@@ -1,0 +1,154 @@
+/* DASHBOARD — index.css */
+
+/* HERO */
+.hero {
+  background: #1f2937;
+  color: #fff;
+  padding: 3.5rem 1.5rem 3rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #60a5fa;
+  border: 1px solid #374151;
+  padding: 0.3rem 0.9rem;
+  border-radius: 50px;
+  margin-bottom: 1.25rem;
+}
+
+.hero h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem); /* tam de font responsivo: valor minimo, valor ideal, valor maximo */
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero p {
+  color: #94a3b8;
+  font-size: 1rem;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.hero p strong { 
+  color: #cbd5e1; 
+}
+
+
+.hero-meta {   /* span */
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.82rem;
+  color: #6b7280;
+}
+
+/* SECTION HEADER */
+.section-header { 
+  text-align: center;
+  margin-bottom: 3rem; 
+  padding-top: 1rem;
+}
+.section-header h3 { 
+  font-size: 1.4rem;
+  font-weight: 700; 
+  color: var(--text);
+}
+.section-header p { 
+  color: var(--muted); 
+  font-size: 0.9rem; 
+}
+
+/* GRID */
+.grid-exercicios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px)  { 
+  .grid-exercicios { 
+    grid-template-columns: repeat(3, 1fr); 
+  } 
+}
+@media (min-width: 1024px) { 
+  .grid-exercicios { 
+    grid-template-columns: repeat(4, 1fr); 
+  } 
+}
+
+/* CARD */
+.card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;   /* empilha em coluna */
+  gap: 0.5rem;
+  position: relative;
+  overflow: hidden; /* esconde os conteudos que passar as dimenções */
+}
+
+.card::after { /* elemento que não existe no html criado dps do card */
+  content: '';
+  /* coloca pra baixo - e ocupa do cmc ao fim */
+  position: absolute;
+  bottom: 0; 
+  left: 0; 
+  right: 0;
+  height: 3px;
+  background: var(--primary);
+  transform: scaleX(0); /* cmc escondido e sai no hover */
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.card:hover { 
+  transform: translateY(-5px); 
+  box-shadow: var(--shadow-lg); 
+  border-color: var(--primary); 
+}
+.card:hover::after { 
+  transform: scaleX(1); 
+}
+
+.card-num {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--primary);
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+}
+
+.card h4 { 
+  font-size: 1rem; 
+  font-weight: 700; 
+  color: var(--text); 
+  margin: 0; 
+}
+.card > p { 
+  font-size: 0.8rem; 
+  color: var(--muted); 
+  line-height: 1.4; 
+  flex: 1; 
+}
+
+.card-tags { 
+  display: flex; 
+  gap: 0.35rem; 
+  flex-wrap: wrap; 
+  margin-top: 0.5rem; 
+}

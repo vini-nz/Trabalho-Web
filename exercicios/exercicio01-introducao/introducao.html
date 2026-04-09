@@ -1,110 +1,97 @@
-    <!DOCTYPE html>
-    <html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex 01 · Introdução — Trabalho Web</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <head>
+  <header class="header">
+    <a href="../../index.html" class="logo">
+      <div class="logo-icon">W</div>
+      <h1>Trabalho Web</h1>
+    </a>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-        <meta charset="UTF-8">
+    <nav class="nav">
+      <a href="../../index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Exercícios ▾</button>
+        <div class="dropdown-content">
+          <a href="../exercicios/exercicio01-introducao/introducao.html">01 · Introdução</a>
+          <a href="../exercicios/exercicio02-perfil/index.html">02 · Perfil</a>
+          <a href="../exercicios/exercicio03-portfolio/index.html">03 · Portfólio</a>
+          <a href="../exercicios/exercicio04-blog/index.html">04 · Blog</a>
+          <a href="../exercicios/exercicio05-contato/index.html">05 · Contato</a>
+          <a href="../exercicios/exercicio06-faq/index.html">06 · FAQ</a>
+          <a href="../exercicios/exercicio07-login/index.html">07 · Login</a>
+          <a href="../exercicios/exercicio08-produto/index.html">08 · Produto</a>
+          <a href="../exercicios/exercicio09-tarefas/index.html">09 · Tarefas</a>
+          <a href="../exercicios/exercicio10-testemunhos/index.html">10 · Testemunhos</a>
+          <a href="../exercicios/exercicio11-mapa-site/index.html">11 · Mapa do Site</a>
+          <a href="../exercicios/exercicio12-galeria/index.html">12 · Galeria</a>
+          <a href="../exercicios/exercicio13-promocoes/index.html">13 · Promoções</a>
+          <a href="../exercicios/exercicio14-equipe/index.html">14 · Equipe</a>
+          <a href="../exercicios/exercicio15-lancamento/index.html">15 · Lançamento</a>
+        </div>
+      </div>
+      <a href="../sobre/sobre.html">Sobre</a>
+    </nav>
+  </header>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <section class="hero-section">
 
-        <title>Exercício 01 - Introdução</title>
+    <div class="hero-sobreposicao"></div>
+    
+    <div class="hero-body">
+      <span class="ex-badge">EXERCICIO 01</span>
+      <h1>Programação Web
+        <br>
+        <span>do Zero ao Moderno</span>
+      </h1>
+      <p>Uma jornada por HTML semântico e CSS poderoso — explorando estrutura, estilo e boas práticas de desenvolvimento front-end.</p>
+      <div class="hero-actions">
+        <a href="../../index.html" class="btn outline">Dashboard</a>
+      </div>
+    </div>
+  </section>
 
-        <link rel="stylesheet" href="../../style.css">
-        <link rel="stylesheet" href="style.css">
+  <main>
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Tag Utilizada</h3>
+        <h4>h1</h4>
+        <p>Representa o título de maior importância na página — essencial para SEO e acessibilidade.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon"></div>
+        <h3>Propriedade CSS</h3>
+        <h4>background-image</h4>
+        <p>Aplica imagem como fundo do elemento. Usada aqui com <em>background-size: cover</em> para cobrir toda a área.</p>
+      </div>
+      <div class="info-card">
+        <h3>Mobile First</h3>
+        <h4>@media (min-width: 768px)</h4>
+        <p>Layout planejado primeiro para telas pequenas, expandindo progressivamente para dispositivos maiores.</p>
+      </div>
+    </div>
 
-    </head>
+    <div class="nav-exercicios">
+      <a href="../exercicio02-perfil/index.html" class="btn-nav">Próximo →</a>
+    </div>
+  </main>
 
-    <body>
+  <footer>
+    <p>© 2026 · Desenvolvido por <strong>Bruno Myguel & Vinicius Santos</strong> · Programação Web</p>
+  </footer>
 
-        <header class="header">
-
-            <div class="logo">
-                <h1>Trabalho Web</h1>
-            </div>
-
-            <input type="checkbox" id="menu-toggle">
-
-            <label for="menu-toggle" class="menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-
-            <nav class="nav">
-                <a href="../index.html">Home</a>
-
-                <div class="dropdown">
-                    <button class="dropbtn">Exercícios ▾</button>
-
-                    <div class="dropdown-content">
-                        <a href="../exercicio01-introducao/introducao.html">Exercício 01</a>
-                        <a href="../exercicio02-perfil/perfis.html">Exercício 02</a>
-                        <a href="../exercicio03-portfolio/index.html">Exercício 03</a>
-                        <a href="../exercicio04-blog/index.html">Exercício 04</a>
-                        <a href="../exercicio05-contato/index.html">Exercício 05</a>
-                        <a href="../exercicio06-faq/index.html">Exercício 06</a>
-                        <a href="../exercicio07-login/index.html">Exercício 07</a>
-                        <a href="../exercicio08-produto/index.html">Exercício 08</a>
-                        <a href="../exercicio09-tarefas/index.html">Exercício 09</a>
-                        <a href="../exercicio10-testemunhos/index.html">Exercício 10</a>
-                        <a href="../exercicio11-mapa-site/index.html">Exercício 11</a>
-                        <a href="../exercicio12-galeria/index.html">Exercício 12</a>
-                        <a href="../exercicio13-promocoes/index.html">Exercício 13</a>
-                        <a href="../exercicio14-equipe/index.html">Exercício 14</a>
-                        <a href="../exercicio15-lancamento/index.html">Exercício 15</a>
-                    </div>
-                </div>
-
-                <a href="../sobre/index.html">Sobre</a>
-
-            </nav>
-
-        </header>
-
-        <main class="exercicio-container">
-
-            <div class="exercise-card">
-
-                <a href="../../index.html" class="btn-voltar">← Voltar ao Dashboard</a>
-
-                <h2>Exercício 01 — Página de Introdução</h2>
-
-                <p>
-                    Este exercício tem como objetivo criar uma página simples utilizando as
-                    principais tags estruturais do HTML.
-                </p>
-
-                <p>
-                    Nesta página apresentamos um pequeno texto introdutório explicando o
-                    propósito do projeto e demonstrando o uso correto de elementos
-                    semânticos.
-                </p>
-
-                <h3>Objetivos do exercício</h3>
-
-                <ul>
-                    <li>Utilizar estrutura básica do HTML</li>
-                    <li>Aplicar títulos e parágrafos</li>
-                    <li>Organizar conteúdo de forma semântica</li>
-                    <li>Estruturar uma página simples</li>
-                </ul>
-
-                <div class="nav-exercicios">
-                    <a href="../exercicio02-perfil/perfis.html" class="btn-nav">Próximo →</a>
-                </div>
-
-            </div>
-
-            <div class="imagemBG"></div>
-
-        </main>
-
-        <footer>
-            <p>
-                © Desenvolvido por Bruno Myguel & Vinicius Santos • Programação Web
-            </p>
-        </footer>
-
-    </body>
-
-    </html>
+</body>
+</html>
