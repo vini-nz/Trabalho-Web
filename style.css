@@ -55,6 +55,18 @@ body {
   height: auto;
   display: block;
 }
+.logo-img {
+  width: 280px;
+  height: auto;
+  display: block;
+}
+
+
+@media (max-width: 600px) {
+  .logo-img {
+    width: 150px;
+  }
+}
 
 /* inicio da config do menu hamburguer e nav em tela menor */
 
